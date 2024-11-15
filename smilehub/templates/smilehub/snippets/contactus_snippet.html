@@ -1,0 +1,58 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<div id="contact" class="sffg-contactus">
+    <span class="sffg-text148">
+        <span>Reach out to us using the contact form below. We look forward to hearing from you!</span>
+    </span>
+    
+    <!-- Display messages -->
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Contact Form -->
+    <form method="POST" id="contactForm" onsubmit="return validateForm()">
+        {% csrf_token %}
+        
+        <!-- Name field -->
+        <div class="sffg-namebox">
+          <label for="{{ form.name.id_for_label }}" class="sffg-text150">Name</label>
+          {% render_field form.name class="sffg-namebox sffg-text150" %}
+      </div>
+        <!-- Email field -->
+        <div class="sffg-emailbox">
+            <span class="sffg-text152">Email</span>
+            {% render_field form.email class="sffg-emailbox sffg-text152" %}
+        </div>
+
+        <!-- Message field -->
+        <div class="sffg-messagebox">
+            <span class="sffg-text154">Message</span>
+            {% render_field form.message class="sffg-messagebox sffg-text154" %}
+        </div>
+
+        <span class="sffg-text156">Contact us</span>
+
+        <div class="sffg-frame2951">
+            <button  class="sffg-text158" type="submit">Send</button>
+        </div>
+
+        <div id="errorMessage" style="color: red;"></div>
+    </form>
+
+    <!-- Bible Study Information -->
+    <div class="sffg-group1">
+        <div class="sffg-frame2961">
+            <span class="sffg-text160">
+                <span class="sffg-text161">Bible Study</span>
+                <span>: Every Saturday from 11 am. USA Pacific Standard Time (9 pm East Africa Time). All Are Welcome!</span>
+            </span>
+        </div>
+        <img alt="Bible Study Image" src="{% static 'img/image16705-1q0u-600h.png' %}" class="sffg-image1" />
+    </div>
+</div>

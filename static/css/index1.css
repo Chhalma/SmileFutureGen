@@ -1,0 +1,930 @@
+/* Base Styles */
+.sffg-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em; /* Add padding for better mobile spacing */
+  }
+  
+  .sffgsffg {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .sffg-desktop5 {
+    top: 10vh; /* Adjust position for better responsiveness */
+    left: 0;
+    width: 100%;
+    min-height: 50vh; /* Use a relative height */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(251, 239, 225, 1);
+  }
+  
+  .sffg-frame3001 {
+    top: 5vh;
+    left: 5vw;
+    width: 90vw; /* Adjust width to fit smaller screens */
+    max-width: 670px; /* Prevent it from becoming too wide */
+    height: auto; /* Let content control the height */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .sffg-frame3001 {
+      width: 80vw;
+      top: 5vh;
+      left: 10vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sffg-desktop5 {
+      top: 5vh;
+    }
+    .sffg-frame3001 {
+      width: 90vw;
+      left: 5vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sffg-frame3001 {
+      width: 100vw;
+      left: 0;
+      padding: 1em;
+    }
+  }
+  /* Base Styles */
+  .sffg-text100 {
+    color: rgba(0, 0, 0, 0.7);
+    width: 90%; /* Adjust width to be more responsive */
+    max-width: 670px;
+    height: auto;
+    position: relative; /* Use relative positioning for responsiveness */
+    font-size: 1.375rem; /* Equivalent to 22px, scalable */
+    font-style: normal;
+    text-align: left;
+    font-family: Lora, serif;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+  
+  .sffg-africa4x1 {
+    top: 15vh; /* Use vh for vertical alignment */
+    left: 60%;
+    width: 50vw;
+    max-width: 590px;
+    height: auto;
+    position: relative; /* Use relative for better flow on smaller screens */
+  }
+  
+  .sffg-text108 {
+    top: 10vh;
+    left: 10%;
+    color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    position: relative;
+    font-size: 6rem; /* Equivalent to 96px, scalable */
+    font-family: Copse, sans-serif;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .sffgimage74x3 {
+    top: 20vh;
+    left: 50%;
+    width: 40vw;
+    max-width: 348px;
+    height: auto;
+    position: relative;
+  }
+  
+  .sffg-text110 {
+    top: 30vh;
+    left: 60%;
+    color: rgba(255, 231, 148, 1);
+    height: auto;
+    position: relative;
+    font-size: 1.5rem; /* Equivalent to 24px, scalable */
+    text-align: center;
+    font-family: Copse, sans-serif;
+    font-weight: 400;
+  }
+  
+  .sffg-star7 {
+    top: 28vh;
+    left: 62%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .sffg-text112 {
+    top: 35vh;
+    left: 62%;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: relative;
+    font-size: 2.125rem; /* Equivalent to 34px, scalable */
+    font-family: Copse, sans-serif;
+    font-weight: 400;
+  }
+  
+  .sffg-text114 {
+    top: 25vh;
+    left: 62%;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: relative;
+    font-size: 1rem; /* Equivalent to 16px, scalable */
+    text-align: center;
+    font-family: Copse, sans-serif;
+    font-weight: 400;
+  }
+  
+  .sffg-desktop6 {
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    min-height: 50vh; /* Responsive height */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .sffg-text118 {
+    top: 10vh;
+    left: 70%;
+    color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    position: relative;
+    font-size: 6rem; /* Equivalent to 96px, scalable */
+    font-family: Copse, sans-serif;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .sffg-text100, .sffg-text108, .sffg-text110, .sffg-text112, .sffg-text114, .sffg-text118 {
+      font-size: 1rem; /* Scale down text sizes */
+    }
+    .sffg-africa4x1, .sffgimage74x3 {
+      width: 70vw;
+      left: 15%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sffg-text108, .sffg-text118 {
+      font-size: 4rem;
+    }
+    .sffgimage74x3 {
+      width: 60vw;
+      left: 20%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sffg-text100, .sffg-text108, .sffg-text110, .sffg-text112, .sffg-text114, .sffg-text118 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .sffg-africa4x1, .sffgimage74x3 {
+      width: 80vw;
+      left: 10%;
+    }
+  }
+  /* Responsive photo carousel */
+  .sffg-photo-carusel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    background-color: rgba(229, 14, 22, 1);
+  }
+  
+  .sffg-carusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual carousel items - make them responsive */
+  .sffg-rectangle51, .sffg-rectangle52, .sffg-rectangle53,
+  .sffg-rectangle54, .sffg-rectangle55, .sffg-rectangle56,
+  .sffg-rectangle57, .sffg-rectangle58, .sffg-rectangle59,
+  .sffg-rectangle60, .sffg-rectangle61 {
+    min-width: 250px; /* Sets a minimum width to keep items visible */
+    max-width: 320px;
+    height: auto;
+    flex-shrink: 0; /* Prevents items from shrinking */
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 40px;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .sffg-rectangle51, .sffg-rectangle52, .sffg-rectangle53,
+    .sffg-rectangle54, .sffg-rectangle55, .sffg-rectangle56,
+    .sffg-rectangle57, .sffg-rectangle58, .sffg-rectangle59,
+    .sffg-rectangle60, .sffg-rectangle61 {
+      min-width: 180px;
+      max-width: 200px;
+    }
+  
+    .sffg-photo-carusel {
+      padding: 10px;
+    }
+  
+    .sffg-carusel {
+      gap: 10px;
+    }
+  }
+  .sffg-desktop3 {
+    top: 0;
+    left: 0;
+    width: 100%; /* Changed to relative width */
+    height: auto; /* Changed to auto height */
+    display: flex;
+    overflow: hidden;
+    position: relative; /* Changed to relative */
+    align-items: flex-start;
+    background-color: rgba(173, 227, 223, 1);
+  }
+  
+  .sffg-ppp74x1 {
+    top: 20%; /* Changed to percentage for vertical responsiveness */
+    left: 60%; /* Changed to percentage for horizontal responsiveness */
+    width: 30%; /* Changed to relative width */
+    height: auto; /* Changed to auto height */
+    position: absolute;
+    transform: translate(-50%, -20%); /* Centering the element */
+  }
+  
+  .sffg-jav4x,
+  .sffg-gav4x,
+  .sffg-lav4x,
+  .sffg-pav4x {
+    width: 6%; /* Adjusted width for smaller screens */
+    height: auto; /* Changed to auto height */
+    position: absolute;
+  }
+  
+  .sffg-jav4x {
+    top: 90%; /* Positioned based on viewport height */
+    left: 65%; /* Positioned based on viewport width */
+  }
+  
+  .sffg-gav4x {
+    top: 30%; /* Adjusted for responsiveness */
+    left: 15%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-lav4x {
+    top: 20%; /* Adjusted for responsiveness */
+    left: 85%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-pav4x {
+    top: 70%; /* Adjusted for responsiveness */
+    left: 95%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-group2 {
+    top: 25%; /* Changed to percentage for responsiveness */
+    left: 10%; /* Changed to percentage for responsiveness */
+    width: 50%; /* Changed to relative width */
+    height: auto; /* Changed to auto height */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  
+  .sffg-text134 {
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%; /* Changed to relative width */
+    font-size: 6vw; /* Responsive font size */
+    font-family: Copse;
+    font-weight: 400;
+    line-height: 1.1; /* Adjusted line height */
+  }
+  
+  .sffg-text138 {
+    top: 15%; /* Changed to percentage */
+    color: rgba(0, 0, 0, 1);
+    width: 90%; /* Changed to relative width */
+    font-size: 2vw; /* Responsive font size */
+    font-family: Lora;
+    font-weight: 400;
+  }
+  
+  .sffg-text148,
+  .sffg-text150,
+  .sffg-text152,
+  .sffg-text154,
+  .sffg-text156,
+  .sffg-text158 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2vw; /* Responsive font size */
+    font-family: Lora;
+  }
+  
+  .sffg-namebox,
+  .sffg-emailbox,
+  .sffg-messagebox {
+    width: 40%; /* Changed to relative width */
+    height: auto; /* Changed to auto height */
+    display: flex;
+    position: absolute;
+    padding: 10px; /* Adds padding for aesthetics */
+   
+    width: auto; /* Change this to desired width */
+    min-width: 150px; /* Ensures a minimum width for visibility */
+    max-width: 300px; /* Sets a maximum width, adjust as needed */
+    
+    border-radius: 8px;
+    background-color: rgba(240, 240, 240, 1);
+  }
+  
+  .sffg-namebox {
+    top: 45%; /* Adjusted for responsiveness */
+    left: 10%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-emailbox {
+    top: 45%; /* Adjusted for responsiveness */
+    left: 55%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-messagebox {
+    top: 60%; /* Adjusted for responsiveness */
+    left: 10%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-frame291,
+  .sffg-frame2951,
+  .sffg-frame2961 {
+    width: 100%; /* Changed to relative width */
+    height: auto; /* Changed to auto height */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  
+  .sffg-frame2961 {
+    background-color: rgba(229, 14, 22, 1);
+  }
+  
+  @media (max-width: 768px) {
+    .sffg-text134 {
+      font-size: 8vw; /* Adjusted for smaller screens */
+    }
+    
+    .sffg-text138 {
+      font-size: 4vw; /* Adjusted for smaller screens */
+    }
+  
+    .sffg-text148,
+    .sffg-text150,
+    .sffg-text152,
+    .sffg-text154,
+    .sffg-text156,
+    .sffg-text158 {
+      font-size: 3vw; /* Adjusted for smaller screens */
+    }
+  
+    .sffg-namebox,
+    .sffg-emailbox,
+    .sffg-messagebox {
+      width: 80%; /* Adjusted width for smaller screens */
+    }
+  
+    .sffg-frame2961 {
+      height: 100px; /* Adjusted height */
+    }
+  }
+  .sffg-text160 {
+    top: 3px;
+    left: 5%; /* Changed to percentage */
+    color: rgba(255, 255, 255, 1);
+    width: 80%; /* Adjusted for responsiveness */
+    height: auto;
+    position: absolute;
+    font-size: 2rem; /* Changed to rem */
+    font-weight: bold; /* Removed font-style */
+    text-align: left;
+    font-family: Lora, serif; /* Added fallback font */
+    line-height: 1.4; /* Changed to unitless value */
+  }
+  
+  .sffg-text161 {
+    font-weight: 700;
+  }
+  
+  .sffg-image1 {
+    top: 0;
+    left: 0;
+    width: 100%; /* Changed to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+  }
+  
+  .sffg-footer {
+    top: 6304px; /* You may want to adjust this with media queries */
+    left: 0;
+    width: 100%; /* Full width for responsive footer */
+    height: auto; /* Adjusted for content */
+    display: flex;
+    flex-direction: column; /* Changed to column for better stacking */
+    align-items: center; /* Center content */
+    overflow: hidden;
+    background-color: rgba(174, 227, 223, 1);
+  }
+  
+  .sffg-text163, .sffg-text165, .sffg-text167 {
+    color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    position: absolute;
+    font-size: 1.5rem; /* Changed to rem */
+    font-weight: 400;
+    line-height: 1.5; /* Changed to unitless value */
+  }
+  
+  /* Using flex properties for text alignment */
+  .sffg-text163 {
+    top: 10%; /* Adjust as necessary */
+    left: 5%;
+  }
+  
+  .sffg-text165 {
+    top: 10%;
+    left: 40%;
+  }
+  
+  .sffg-text167 {
+    top: 10%;
+    left: 75%;
+  }
+  
+  /* Repeat for other text classes */
+  .sffg-text169, .sffg-text171, .sffg-text173, .sffg-text175, .sffg-text177, .sffg-text179, .sffg-text183, .sffg-text185 {
+    position: absolute;
+    font-size: 1rem; /* Adjust for responsiveness */
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Example for media queries */
+  @media (max-width: 768px) {
+    .sffg-text160 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      left: 2%; /* More padding on smaller screens */
+      width: 90%; /* Use more of the screen width */
+    }
+  
+    .sffg-footer {
+      flex-direction: column; /* Stack items in the footer */
+      top: auto; /* Adjust top positioning if necessary */
+    }
+    
+    /* Adjust other text classes as necessary */
+    .sffg-text163, .sffg-text165, .sffg-text167 {
+      font-size: 1.25rem; /* Smaller font size for smaller screens */
+      left: 5%; /* Adjust positioning */
+    }
+  }
+  /* Set a base size for the page */
+  html {
+    font-size: 16px; /* Set base font size */
+  }
+  
+  /* Use viewport-relative units for positioning and sizing */
+  .sffg-section-list-social-bar-item-link-instagramwowimage01c3a,
+  .sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+    top: calc(20vh + 5%);
+    left: calc(75vw + 5%);
+    width: 2rem; /* 32px */
+    height: 2rem; /* 32px */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-size: cover;
+  }
+  
+  .sffg-section-list-social-bar-item-link-instagramwowimage01c3a {
+    background-image: url("../img/tq_yq_0pgnmdx-k7mw-200h.png");
+  }
+  
+  .sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+    background-image: url("../img/tq_swx7qtcxiu-evm-200h.png");
+  }
+  
+  .sffg-logo4x11 {
+    top: 5vh; /* Adjusted for responsiveness */
+    left: 15vw; /* Adjusted for responsiveness */
+    width: 6rem; /* 97px */
+    height: 6.25rem; /* 101px */
+    position: absolute;
+  }
+  
+  .sffg-frame294 {
+    top: 85vh; /* Adjusted for responsiveness */
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 5vh; /* Adjusted height */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .sffg-copyright {
+    top: 12px; /* Keeps it consistent */
+    left: 50%;
+    transform: translateX(-50%); /* Centering */
+    width: auto; /* Auto width */
+    height: auto; /* Auto height */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  
+  .sffg-text187 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 0.8125rem; /* 13px */
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+  }
+  
+  .sffg-ellipse107 {
+    top: 1rem; /* Adjusted for responsiveness */
+    left: 50%;
+    transform: translateX(-50%); /* Centering */
+    width: 0.5625rem; /* 9px */
+    height: 0.5625rem; /* 9px */
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .sffg-text189 {
+    top: 0.5rem; /* Adjusted for responsiveness */
+    left: 50%;
+    transform: translateX(-50%); /* Centering */
+    color: rgba(0, 0, 0, 1);
+    width: auto; /* Auto width */
+    height: auto; /* Auto height */
+    position: absolute;
+    font-size: 0.4375rem; /* 7px */
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+  }
+  
+  .sffg-frame2952 {
+    top: 90vh; /* Adjusted for responsiveness */
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 33.125vh; /* Adjusted height */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-size: cover;
+    background-image: url("../img/tq_6h9kw92obl-e5a5-600h.png");
+  }
+  
+  .sffg-text190 {
+    top: 20vh; /* Adjusted for responsiveness */
+    left: 50%;
+    transform: translateX(-50%); /* Centering */
+    color: rgba(255, 255, 255, 1);
+    width: 80vw; /* Responsive width */
+    height: auto;
+    position: absolute;
+    font-size: 2.5rem; /* 40px */
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration: none;
+  }
+  
+  .sffg-desktop7 {
+    top: 70vh; /* Adjusted for responsiveness */
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 70vh; /* Adjusted height */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(251, 239, 225, 1);
+  }
+  
+  .sffg-text192 {
+    top: 20vh; /* Adjusted for responsiveness */
+    left: 10vw; /* Responsive left position */
+    color: rgba(0, 0, 0, 0.699);
+    width: 60vw; /* Responsive width */
+    height: auto;
+    position: absolute;
+    font-size: 1.125rem; /* 18px */
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 185%;
+    text-decoration: none;
+  }
+  
+  .sffg-text204 {
+    top: 40vh; /* Adjusted for responsiveness */
+    left: 50%;
+    transform: translateX(-50%); /* Centering */
+    color: rgba(0, 0, 0, 1);
+    width: 50vw; /* Responsive width */
+    height: auto;
+    position: absolute;
+    font-size: 1.5rem; /* 24px */
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    line-height: 160%;
+    text-decoration: none;
+  }
+  
+  /* Media Queries for specific screen sizes */
+  @media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .sffg-section-list-social-bar-item-link-instagramwowimage01c3a,
+    .sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+      width: 1.5rem; /* 24px */
+      height: 1.5rem; /* 24px */
+    }
+  
+    .sffg-text190 {
+      font-size: 2rem; /* 32px */
+    }
+  
+    .sffg-text192 {
+      font-size: 1rem; /* 16px */
+    }
+  
+    .sffg-text204 {
+      font-size: 1.25rem; /* 20px */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .sffg-section-list-social-bar-item-link-instagramwowimage01c3a,
+    .sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+      width: 1.25rem; /* 20px */
+      height: 1.25rem; /* 20px */
+    }
+  
+    .sffg-text190 {
+      font-size: 1.5rem; /* 24px */
+    }
+  
+    .sffg-text192 {
+      font-size: 0.875rem; /* 14px */
+    }
+  
+    .sffg-text204 {
+      font-size: 1rem; /* 16px */
+    }
+  }
+  /* Base styles for larger screens */
+  .sffg-rectangle63 {
+    top: 10vh; /* Adjusted for responsiveness */
+    left: 60vw; /* Adjusted for responsiveness */
+    width: 30vw; /* Adjusted for responsiveness */
+    height: 30vh; /* Adjusted for responsiveness */
+    position: absolute;
+  }
+  
+  .sffg-rectangle64 {
+    top: 25vh; /* Adjusted for responsiveness */
+    left: 45vw; /* Adjusted for responsiveness */
+    width: 25vw; /* Adjusted for responsiveness */
+    height: 25vh; /* Adjusted for responsiveness */
+    border-color: rgba(251, 239, 225, 1);
+    border-style: solid;
+    border-width: 1.5vh; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-frame2962 {
+    top: 60vh; /* Adjusted for responsiveness */
+    left: 45vw; /* Adjusted for responsiveness */
+    width: 10vw; /* Adjusted for responsiveness */
+    height: 7vh; /* Adjusted for responsiveness */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  .sffg-text206 {
+    top: 10%;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    position: absolute;
+    font-size: 2.5vw; /* Adjusted for responsiveness */
+    font-style: Regular;
+    text-align: left;
+    font-family: Lora;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .sffg-navbar {
+    top: 2vh; /* Adjusted for responsiveness */
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 10vh; /* Adjusted for responsiveness */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .sffg-text208,
+  .sffg-text210,
+  .sffg-text212 {
+    top: 30px; /* Can also adjust based on design */
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 1.5vw; /* Adjusted for responsiveness */
+    font-style: Regular;
+    text-align: left;
+    font-family: Lora;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  
+  .sffg-logo4x12 {
+    top: 5vh; /* Adjusted for responsiveness */
+    left: 5vw; /* Adjusted for responsiveness */
+    width: 5vw; /* Adjusted for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .sffg-frame2953 {
+    top: 5vh; /* Adjusted for responsiveness */
+    left: 85vw; /* Adjusted for responsiveness */
+    width: 10vw; /* Adjusted for responsiveness */
+    height: 7vh; /* Adjusted for responsiveness */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .sffg-text214,
+  .sffg-text216 {
+    top: 10%;
+    left: 10%;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 2.5vw; /* Adjusted for responsiveness */
+    font-style: Regular;
+    text-align: left;
+    font-family: Lora;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .sffg-rectangle63, .sffg-rectangle64, .sffg-frame2962, .sffg-navbar {
+      width: 90%; /* Adjusted for smaller screens */
+      left: 5%; /* Center on smaller screens */
+    }
+  
+    .sffg-text206, .sffg-text208, .sffg-text210, .sffg-text212, .sffg-text214, .sffg-text216 {
+      font-size: 4vw; /* Smaller font size for mobile */
+    }
+  
+    .sffg-logo4x12 {
+      width: 15vw; /* Logo size adjustment */
+      top: 3vh; /* Logo position adjustment */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sffg-text206, .sffg-text208, .sffg-text210, .sffg-text212, .sffg-text214, .sffg-text216 {
+      font-size: 5vw; /* Further reduction for small devices */
+    }
+  }
+  .sffg-frame2963 {
+    top: 3vh; /* Adjusted for responsiveness */
+    left: 70vw; /* Adjusted for responsiveness */
+    width: 10vw; /* Adjusted for responsiveness */
+    height: 7vh; /* Adjusted for responsiveness */
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: center; /* Centering content vertically */
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  .sffg-text218 {
+    top: 50%; /* Center vertically within the frame */
+    left: 10%; /* Positioning inside the frame */
+    transform: translateY(-50%); /* Adjusting for vertical centering */
+    color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    position: absolute;
+    font-size: 2.5vw; /* Adjusted for responsiveness */
+    font-style: Regular;
+    text-align: left;
+    font-family: Lora;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .sffg-frame2963 {
+      left: 5vw; /* Adjusted for smaller screens */
+      width: 90%; /* Full width on small screens */
+      height: 10vh; /* Height adjustment for small screens */
+    }
+  
+    .sffg-text218 {
+      font-size: 4vw; /* Font size adjustment for smaller devices */
+      left: 5%; /* Adjusted left positioning */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sffg-text218 {
+      font-size: 5vw; /* Further reduction for very small devices */
+    }
+  }
+  

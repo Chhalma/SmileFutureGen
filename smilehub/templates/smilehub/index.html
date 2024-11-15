@@ -1,0 +1,810 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        /*
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);*/
+        background-color: #ADE3DF;
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Copse:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <div>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+   <h1>HEllo world</h1>
+      <div class="sffg-container">
+        <div class="sffgsffg">
+          <div class="sffg-desktop5">
+            <div class="sffg-frame3001">
+              <span class="sffg-text100">
+                <span>
+                  "Smile for Future Generation" is situated in the Ilemela
+                  district, Mwanza City Council, specifically in Magaka village.
+                </span>
+                <br />
+                <span>
+                  Recognizing the essential role of the education sector in
+                  realizing the country's vision of industrialization and
+                  economic development, and consequently improving the quality
+                  of life, the organization aims to contribute to this vision.
+                  Despite the government of Tanzania's efforts to enhance
+                  education services by providing free education in primary and
+                  secondary schools, there remain marginalized and vulnerable
+                  children who do not fully benefit from this opportunity.
+                </span>
+                <br />
+                <span></span>
+                <br />
+                <span>
+                  To address this gap, it is crucial for non-state actors to
+                  collaborate and complement the government's efforts in
+                  improving educational services for children, particularly
+                  those from vulnerable families, especially in rural areas
+                  where many are disadvantaged. This collaborative effort will
+                  involve implementing innovative ideas tailored to respective
+                  communities, ensuring equitable access to education services
+                  for children aged 6 to 18 years old.
+                </span>
+              </span>
+            </div>
+            <img
+              alt="Africa4x16584"
+              src="{% static 'img/africa4x16584-zbp-700h.png' %}"
+              class="sffg-africa4x1"
+            />
+            <span class="sffg-text108"><span>Who we are</span></span>
+            <img
+              alt="IMAGE74x36635"
+              src="{% static 'img/image74x36635-cmuq-500h.png' %}"
+              class="sffgimage74x3"
+            />
+            <span class="sffg-text110"><span>Mwanza</span></span>
+            <img
+              alt="Star76635"
+              src="{% static 'img/star76635-bny.svg' %}"
+              class="sffg-star7"
+            />
+            <span class="sffg-text112"><span>TANZANIA</span></span>
+            <span class="sffg-text114">
+              <span>Victoria</span>
+              <br />
+              <span>Lake</span>
+            </span>
+          </div>
+          <div class="sffg-desktop6">
+            <span class="sffg-text118"><span>our story</span></span>
+            <img
+              alt="Rectangle626632"
+              src="{% static 'img/rectangle626632-nzkw11e-700h.png' %}"
+              class="sffg-rectangle62"
+            />
+            <div class="sffg-frame298"></div>
+            <div class="sffg-frame3002">
+              <div class="sffg-frame297">
+                <span class="sffg-text120">
+                  <span>
+                    Bahati Alphonce, the founder and CEO of the organization
+                    "Smile For Future Generation," was born in a remote village
+                    being the first born in the family of 13 children from one
+                    mother. He experienced a challenging life in pursuit of
+                    education, but by grace of God, he completed primary
+                    education and enrolled in secondary education. With
+                    exceptional academic abilities, he consistently ranked first
+                    in his class throughout the four years of secondary
+                    education. Due to poverty, he faced challenges obtaining his
+                    certificate and, fortunately, the headteacher generously
+                    provided him with the completion certificate for secondary
+                    school based on his outstanding performance.
+                  </span>
+                  <br />
+                  <span>
+                    He continued his education in high school and eventually
+                    joined the College of Education at the University of Dar es
+                    Salaam in Tanzania. While at college in 2018, his uncle
+                    suffered a tragic motorcycle accident and passed away,
+                    leaving behind five children. They sought help for essential
+                    school supplies such as backpacks, pens, and uniforms from
+                    relatives, including Bahati. However, due to severe poverty,
+                    their pleas often went unanswered. Some children were forced
+                    to quit school and became street children. In 2020, another
+                    relative, his brother's father, died due to COVID-19,
+                    leaving three children in a similar situation.
+                  </span>
+                  <br />
+                  <span>
+                    These heartbreaking events prompted Bahati to question how
+                    many children were facing similar circumstances that he
+                    hadn't heard of. He wondered how many children had abandoned
+                    education due to a lack of school necessities, turning to
+                    life on the streets.
+                  </span>
+                  <br />
+                  <span>
+                    In August 2020, Bahati took action by creating awareness
+                    about the importance of education in his community. Despite
+                    the lack of resources and a physical building, he
+                    established Gladness School Ministry at home, bringing
+                    positive change to parents and children regarding the
+                    significance of education. In August 2023, he officially
+                    founded the NGO "Smile For Future Generation" with the
+                    registration number NGO/R/5028, receiving approval from the
+                    Ministry of Health, Gender, Children, and the Elderly. The
+                    NGO aims to help children from vulnerable families in
+                    Tanzania, recognizing that education opens minds and
+                    self-awareness, and knowledge is the source of wisdom.
+                  </span>
+                  <br />
+                  <span>
+                    As the director of Smile For Future Generation, Bahati
+                    undertakes various roles to ensure the organization is
+                    active and progressing to reach disadvantaged children
+                    lacking educational resources and facilities. His
+                    responsibilities include presiding over general meetings,
+                    serving as the organization's spokesman, acting as a
+                    signatory to the bank account, overseeing daily activities,
+                    and mobilizing and reporting financial resources.
+                  </span>
+                  <br />
+                  <span>
+                    The director welcomes collaboration with individuals,
+                    companies, and education stakeholders from all nations who
+                    are touched and willing to work together to help children
+                    access education.
+                  </span>
+                  <br />
+                  <span>
+                    Proverb 4:13,"Hold on to instructions do not let go ,guard
+                    it well for it is your life"
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="sffg-frame305"></div>
+          </div>
+          <div class="sffg-photo-carusel">
+            <div class="sffg-carusel">
+              <img
+                alt="Rectangle51I6617"
+                src="{% static 'img/rectangle51i6617-idb-400h.png' %}"
+                class="sffg-rectangle51"
+              />
+              <img
+                alt="Rectangle52I6617"
+                src="{% static 'img/rectangle52i6617-8i4j-400h.png' %}"
+                class="sffg-rectangle52"
+              />
+              <img
+                alt="Rectangle53I6617"
+                src="{% static 'img/rectangle53i6617-vn8a-400h.png' %}"
+                class="sffg-rectangle53"
+              />
+              <img
+                alt="Rectangle54I6617"
+                src="{% static 'img/rectangle54i6617-gdz-400h.png' %}"
+                class="sffg-rectangle54"
+              />
+              <img
+                alt="Rectangle55I6617"
+                src="{% static 'img/rectangle55i6617-dx8h-400h.png' %}"
+                class="sffg-rectangle55"
+              />
+              <img
+                alt="Rectangle56I6617"
+                src="{% static 'img/rectangle56i6617-946i-400w.png' %}"
+                class="sffg-rectangle56"
+              />
+              <img
+                alt="Rectangle57I6617"
+                src="{% static 'img/rectangle57i6617-y8kk-400w.png' %}"
+                class="sffg-rectangle57"
+              />
+              <img
+                alt="Rectangle58I6617"
+                src="{% static 'img/rectangle58i6617-e10d-400w.png' %}"
+                class="sffg-rectangle58"
+              />
+              <img
+                alt="Rectangle59I6617"
+                src="{% static 'img/rectangle59i6617-1evh-400w.png' %}"
+                class="sffg-rectangle59"
+              />
+              <img
+                alt="Rectangle60I6617"
+                src="{% static 'img/rectangle60i6617-m77-400w.png' %}"
+                class="sffg-rectangle60"
+              />
+              <img
+                alt="Rectangle61I6617"
+                src="{% static 'img/rectangle61i6617-hocb-400w.png' %}"
+                class="sffg-rectangle61"
+              />
+            </div>
+          </div>
+          <div class="sffg-desktop3">
+            <img
+              alt="ppp74x16664"
+              src="{% static 'img/ppp74x16664-4dts-700h.png' %}"
+              class="sffg-ppp74x1"
+            />
+            <img
+              alt="jav4x6669"
+              src="{% static 'img/jav4x6669-ta28-500h.png' %}"
+              class="sffg-jav4x"
+            />
+            <img
+              alt="gav4x6669"
+              src="{% static 'img/gav4x6669-0i2-200w.png' %}"
+              class="sffg-gav4x"
+            />
+            <img
+              alt="lav4x6669"
+              src="{% static 'img/lav4x6669-oxej-500h.png' %}"
+              class="sffg-lav4x"
+            />
+            <img
+              alt="pav4x6669"
+              src="{% static 'img/pav4x6669-1w5r-200w.png' %}"
+              class="sffg-pav4x"
+            />
+            <div class="sffg-group2">
+              <span class="sffg-text134">
+                <span>smile for future</span>
+                <br />
+                <span>generation</span>
+              </span>
+              <span class="sffg-text138">
+                <span>Matthew 18:1-5</span>
+                <br />
+                <span>
+                  At that time the disciples came to Jesus, saying, "Who then is
+                  greatest in the Kingdom of Heaven?" Then Jesus called a little
+                  child to Him, set him in the midst of them, and said,
+                  "Assuredly, I say to you, unless you are converted and become
+                  as little children, you willl by no means enter the Kingdom of
+                  Heaven.
+                </span>
+                <br />
+                <span>
+                  Therefore whoever humbles himself as this little child is the
+                  greatest in the Kingdom of Heaven. Whoever receives one little
+                  child like this in My name receives Me.
+                </span>
+                <br />
+                <span></span>
+                <br />
+                <span>
+                  2.Proverbs 22:6 Train up a child in the way he should go, And
+                  when he is old he will not depart from it.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="sffg-frame291">
+            <span class="sffg-text148">
+              <span>
+                Reach out to us using the contact form below. We look forward to
+                hearing from you!
+              </span>
+            </span>
+            <div class="sffg-namebox">
+              <span class="sffg-text150"><span>Name</span></span>
+            </div>
+            <div class="sffg-emailbox">
+              <span class="sffg-text152"><span>Email</span></span>
+            </div>
+            <div class="sffg-messagebox">
+              <span class="sffg-text154"><span>Message</span></span>
+            </div>
+            <span class="sffg-text156"><span>Contact us</span></span>
+            <div class="sffg-frame2951">
+              <span class="sffg-text158"><span>Send</span></span>
+            </div>
+            <div class="sffg-group1">
+              <div class="sffg-frame2961">
+                <span class="sffg-text160">
+                  <span class="sffg-text161">Bible Study</span>
+                  <span>
+                    : Every Saturday from 11 am. USA Pacific Standard Time (9 pm
+                    East Africa Time). All Are Welcome!
+                  </span>
+                </span>
+              </div>
+              <img
+                alt="image16705"
+                src="{% static 'img/image16705-1q0u-600h.png' %}"
+                class="sffg-image1"
+              />
+            </div>
+          </div>
+          <div class="sffg-footer">
+            <span class="sffg-text163"><span>NGO</span></span>
+            <span class="sffg-text165"><span>Contact us</span></span>
+            <span class="sffg-text167"><span>Operating Hours</span></span>
+            <span class="sffg-text169"><span>About us</span></span>
+            <span class="sffg-text171">
+              <span>bhtyalphonce412@gmail.com</span>
+            </span>
+            <span class="sffg-text173">
+              <span>Mon - Fri: 8:00 am - 5:00 pm</span>
+            </span>
+            <span class="sffg-text175"><span>Sat - Sun: Closed</span></span>
+            <span class="sffg-text177"><span>+255626835923</span></span>
+            <span class="sffg-text179">
+              <span>33215 Magaka_Ilemela,</span>
+              <br />
+              <span>Mwanza, Tanzania</span>
+            </span>
+            <span class="sffg-text183"><span>Project</span></span>
+            <span class="sffg-text185"><span>Contact us</span></span>
+            <div
+              class="sffg-section-list-social-bar-item-link-instagramwowimage01c3a"
+            ></div>
+            <div
+              class="sffg-section-list-social-bar-item-link-facebookwowimage0fdef7"
+            ></div>
+            <img
+              alt="Logo4x16619"
+              src="{% static 'img/logo4x16619-7upr-200w.png' %}"
+              class="sffg-logo4x11"
+            />
+          </div>
+          <div class="sffg-frame294">
+            <div class="sffg-copyright">
+              <span class="sffg-text187">
+                <span>Copyright SmileForFutureGeneration.</span>
+              </span>
+            </div>
+            <img
+              alt="Ellipse1076643"
+              src="{% static 'img/ellipse1076643-dav-200h.png' %}"
+              class="sffg-ellipse107"
+            />
+            <span class="sffg-text189">c</span>
+          </div>
+          <div class="sffg-frame2952">
+            <span class="sffg-text190">
+              <span>
+                "Empowering Dreams, Building Smiles: Ensuring Every Child in
+                Tanzania Has the Right to Education, Regardless of
+                Circumstances."
+              </span>
+            </span>
+          </div>
+          <div class="sffg-desktop7">
+            <span class="sffg-text192">
+              <span class="sffg-text193">
+                Smile For Future Generation is on a mission to build a dedicated
+                school for children in Tanzania, ensuring they receive education
+                in a secure and conducive environment. We believe every child
+                deserves a chance at a brighter future, and your support is
+                crucial in achieving this goal. Your donation, no matter the
+                size, serves as a catalyst for change, propelling us closer to
+                constructing a transformative space where these young minds can
+                thrive. Join us in making a difference – together, we can
+                empower these children with the education they deserve.
+              </span>
+              <br />
+              <span class="sffg-text195"></span>
+              <br />
+              <span class="sffg-text197"></span>
+              <span class="sffg-text198">
+                Your Contribution Matters: Building Hope, One Step at a Time
+              </span>
+              <br />
+              <span class="sffg-text200"></span>
+              <span>
+                Help us turn dreams into reality by supporting our mission.
+                Every donation contributes to the construction of a school
+                building, providing a foundation for learning and growth.
+                Whether through financial assistance, volunteering, or spreading
+                awareness, your involvement matters. Together, we can create a
+                lasting impact and offer these children the promise of a better
+                tomorrow. Smile For Future Generation invites you to be a part
+                of this journey – your contribution is a step forward in
+                building hope for the future of these deserving children.
+              </span>
+            </span>
+            <span class="sffg-text202"><span>what we do</span></span>
+            <span class="sffg-text204">
+              <span>
+                "Brick by Brick, Smile by Smile: Support Our Cause to Build a
+                Bright Future for Tanzanian Children – Your Donation Transforms
+                Dusty Desks into Classroom Dreams!"
+              </span>
+            </span>
+            <img
+              alt="Rectangle636643"
+              src="{% static 'img/rectangle636643-3gto-700w.png' %}"
+              class="sffg-rectangle63"
+            />
+            <img
+              alt="Rectangle646643"
+              src="{% static 'img/rectangle646643-v2u-600w.png' %}"
+              class="sffg-rectangle64"
+            />
+            <div class="sffg-frame2962">
+              <span class="sffg-text206"><span>Donate</span></span>
+            </div>
+          </div>
+          <div class="sffg-navbar">
+            <span class="sffg-text208"><span>About us</span></span>
+            <span class="sffg-text210"><span>Project</span></span>
+            <span class="sffg-text212"><span>Home</span></span>
+            <img
+              alt="Logo4x16602"
+              src="{% static 'img/logo4x16602-46fg-200w.png' %}"
+              class="sffg-logo4x12"
+            />
+            <div class="sffg-frame2953">
+              <span class="sffg-text214"><span>Contact us</span></span>
+            </div>
+            <div class="sffg-frame293">
+              <span class="sffg-text216"><span>Donate</span></span>
+            </div>
+            <div class="sffg-frame2963">
+              <span class="sffg-text218"><span>Donate</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

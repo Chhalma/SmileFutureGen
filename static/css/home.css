@@ -1,0 +1,532 @@
+.sffg-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em; /* Add padding for better mobile spacing */
+}
+
+.sffgsffg {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+/*........Home section.......*/
+.sffg-home {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto !important;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(173, 227, 223, 1);
+  
+}
+@media (max-width: 768px) { /* Adjust this value based on your needs */
+  .sffg-home {
+    min-height: 40vh; /* Or another value that better fits smaller screens */
+  }
+}
+.sffg-ppp74x1 {
+  top: 11vw; /* Changed to percentage for vertical responsiveness */
+  left: 60%; /* Changed to percentage for horizontal responsiveness */
+  width: 30%; /* Changed to relative width */
+  height: auto; /* Changed to auto height */
+  position: absolute;
+  }
+  .sffg-jav4x,
+  .sffg-gav4x,
+  .sffg-lav4x,
+  .sffg-pav4x {
+    width: 7vw; /* Adjusted width for smaller screens */
+    height: 23vw ;/* Changed to auto height */
+    position: absolute;
+  }
+  .sffg-jav4x {
+    top: 37vw; /* Positioned based on viewport height */
+    left: 60vw; /* Positioned based on viewport width */
+    height: 7vw;
+    width:23vw;
+  }
+  
+  .sffg-gav4x {
+    top: 13vw; /* Adjusted for responsiveness */
+    left: 56vw; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-lav4x {
+    top: 5vw; /* Adjusted for responsiveness */
+    left: 86%; /* Adjusted for responsiveness */
+  }
+  
+  .sffg-pav4x {
+    top: 37vw; /* Adjusted for responsiveness */
+    left: 86vw; /* Adjusted for responsiveness */
+  }
+.sffg-group2 {
+  top:11vw;
+  left: 8%; /* Changed to percentage for responsiveness */
+  width: 50%; /* Changed to relative width */
+  height: auto; /* Changed to auto height */
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.sffg-text134 {
+  color: rgba(0, 0, 0, 0.699999988079071);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  font-size: 5vw;
+  font-style: Regular;
+  text-align: left;
+  font-family: Copse;
+  font-weight: 400;
+  line-height: 1;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.sffg-text138 {
+  top: 13vw; /* Changed to percentage */
+  color: rgba(0, 0, 0, 1);
+  width: 95%;
+  height: auto;
+  position: absolute;
+  font-size: 1vw;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+@media (max-width: 768px) { /* Adjust based on your specific needs */
+  
+  .sffg-ppp74x1 {
+    top: 20vw; /* Adjusted top position to avoid navbar overlap */
+    left: 80%; /* Centered horizontally */
+    width: 30%; /* Increased width for smaller screens */
+    transform: translateX(-50%); /* Center alignment */
+  }
+
+  
+  .sffg-group2 {
+    top: 20vw; /* Adjusted for better positioning on smaller screens */
+    left: 5%; /* Reduced left padding */
+    width: 90%; /* Increased width for responsiveness */
+  }
+
+  .sffg-text134 {
+    font-size: 3vw; /* Increased font size for better readability */
+  }
+
+  .sffg-text138 {
+    top: 14vw; /* Adjusted top position to avoid overlap */
+    font-size: 1.2vw; /* Adjusted font size for readability */
+    width: 50%; /* Ensures full width */
+  }
+}@media (max-width: 480px) {
+  /* Styles for mobile devices */
+  .sffg-text134{
+    font-size: 3rem;
+  }
+}
+/*.......aboutus...............*/
+.sffg-aboutus {
+  top: 950px;
+  left: 0px;
+  width: 1920px;
+  min-height: 800px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(251, 239, 225, 1);
+}
+.sffg-frame3001 {
+  top: 289px;
+  left: 140px;
+  width: 670px;
+  height: 577px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sffg-text100 {
+  color: rgba(0, 0, 0, 0.699999988079071);
+  width: 670px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 400;
+  line-height: 185.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.sffg-africa4x1 {
+  top: 177px;
+  left: 1189px;
+  width: 590px;
+  height: 661px;
+  position: absolute;
+}
+.sffg-text108 {
+  top: 140px;
+  left: 140px;
+  color: rgba(0, 0, 0, 0.699999988079071);
+  height: auto;
+  position: absolute;
+  font-size: 96px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Copse;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.sffgimage74x3 {
+  top: 284px;
+  left: 891px;
+  width: 348px;
+  height: 424px;
+  position: absolute;
+}
+.sffg-text110 {
+  top: 404px;
+  left: 961px;
+  color: rgba(255, 231, 148, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Copse;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.sffg-star7 {
+  top: 388px;
+  left: 998px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.sffg-text112 {
+  top: 501px;
+  left: 968px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 34px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Copse;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.sffg-text114 {
+  top: 316px;
+  left: 968px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Copse;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+
+/*.....Navbar ......*/
+.sffg-navbar {
+  top: 2.5vh; /* Adjusted for responsiveness */
+  left: -1px;
+  width: 100vw; /* Full width */
+  height: 5vw; /* Adjusted for responsiveness */
+  max-width: 1920px;   
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.sffg-text208 ,.sffg-text210,.sffg-text212,.sffg-text214,.sffg-text216
+{ top: 1.4vw;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 1vw;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 400;
+  line-height: 2vw;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.sffg-text208 {
+  left: 64vw;
+  
+}
+.sffg-text210 {
+  left: 58vw;
+  }
+.sffg-text212 {
+  left: 52vw;
+  }
+  .sffg-text214 {
+    top:30%;
+    left: 25%;
+    line-height: normal;
+    }
+    .sffg-text216 {
+      top:30%;
+      left: 32%;
+      color: rgba(255, 255, 255, 255);
+      line-height: normal;
+      }
+    
+.sffg-logo4x12 {
+  top: 8%;
+  left: 7%;
+  width: 4vw; /* Adjusted for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+}
+.sffg-frame2953 {
+  top: .8vw; /* Adjusted for responsiveness */
+  left: 82vw;
+  width: 10vw; /* Adjusted for responsiveness */
+  height: 3.5vw; /* Adjusted for responsiveness */
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.sffg-frame293 {
+  top: .8vw; /* Adjusted for responsiveness */
+  left: 70vw;
+  width: 10vw; /* Adjusted for responsiveness */
+  height: 3.5vw; /* Adjusted for responsiveness */
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* CSS for footer .............*/
+.sffg-footer {
+  top: 6304px;
+  left: 0px;
+  width: 100%; /* Full width for responsive footer */
+  height: auto; /* Adjusted for content */
+  min-height: 50vh;
+  max-width: 1920px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row; /* Default row direction */
+  flex-wrap: wrap; /* Allows wrapping to avoid overlap */
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(174, 227, 223, 1);
+  padding: 2rem;
+
+ }
+.sffg-text163 {
+  top: 22%;
+  left: 40%;
+  font-size: 1.3vw;
+  
+}
+.sffg-text165 {
+  top: 22%;
+  left: 55%;
+  font-size: 1.3vw;
+}
+.sffg-text167 {
+  top: 22%;
+  left: 74%;
+  font-size: 1.3vw;
+}
+.sffg-text163 ,.sffg-text165, .sffg-text167, .sffg-text169,.sffg-text171 ,.sffg-text173,.sffg-text175,.sffg-text177,.sffg-text179
+,.sffg-text183,.sffg-text185{
+  color: rgba(0, 0, 0, 0.699999988079071);
+  height: auto;
+  position: absolute;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 400;
+  line-height: 1.5;
+  font-stretch: normal;
+  text-decoration: none;
+  margin: 0.5rem;
+  flex: 1 1 30%; /* Flex property to distribute items */
+  min-width: 150px; /* Minimum width to avoid squishing */
+}
+
+.sffg-text169 {
+  top: 35%;
+  left: 40%;
+  font-size: .9vw;
+  }
+.sffg-text171 {
+  top: 35%;
+  left: 55%;
+  font-size: .9vw;
+  }
+.sffg-text173 {
+  top: 35%;
+  left: 74%;
+  font-size: .9vw;
+  }
+.sffg-text175 {
+  top: 44%;
+  left: 74%;
+  font-size: .9vw;
+  }
+.sffg-text177 {
+  top: 44%;
+  left: 55%;
+  font-size: .9vw;
+ }
+.sffg-text179 {
+  top: 53%;
+  left: 55%;
+  font-size: .9vw;
+  }
+.sffg-text183 {
+  top: 44%;
+  left: 40%;
+  font-size: .9vw;
+  }
+.sffg-text185 {
+  top: 53%;
+  left: 40%;
+  font-size: .9vw;
+  }
+  /* Container for social icons */
+.sffg-social-icons-container {
+  position: absolute;
+  top: calc(35vh + 5%);
+  left: 50%; /* Center the container */
+  transform: translateX(-50%); /* Center align */
+  display: flex;
+  gap: 1rem; /* Add gap between icons */
+ }
+
+/* Instagram icon */
+.sffg-section-list-social-bar-item-link-instagramwowimage01c3a,
+.sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3px;
+}
+
+/* Background images for each icon */
+.sffg-section-list-social-bar-item-link-instagramwowimage01c3a {
+  background-image: url("../img/tq_yq_0pgnmdx-k7mw-200h.png");
+}
+
+.sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+  background-image: url("../img/tq_swx7qtcxiu-evm-200h.png");
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .sffg-section-list-social-bar-item-link-instagramwowimage01c3a,
+  .sffg-section-list-social-bar-item-link-facebookwowimage0fdef7 {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+    padding-right: 1rem;
+  }
+  .sffg-text163 ,.sffg-text165, .sffg-text167, .sffg-text169,.sffg-text171 ,.sffg-text173,.sffg-text175,.sffg-text177,.sffg-text179
+,.sffg-text183,.sffg-text185{
+ font-size: 1.5vw;
+}
+}
+
+.sffg-logo4x11 {
+  top: 22%;
+  left: 18%;
+  width: 6rem; /* 97px */
+  height: 6.25rem; /* 101px */
+  position: absolute;
+}
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 5vh; /* Position from the bottom, responsive to viewport height */
+  right: 3vw;
+  z-index: 1000; /* Ensure it’s on top of other elements */
+  width: 8vw; /* Wider width for an oval shape */
+  height: 6vh; /* Shorter height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1); /* Black background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 100px; /* Rounded corners to match */
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Same shadow effect */
+  font-size: 1rem; /* Adjusted font size */
+  transition: opacity 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker shade on hover */
+}
+
+@media (max-width: 480px) {
+  #backToTopBtn {
+    bottom: 20px !important; /* Adjust position for smaller screens */
+    right: 20px !important;
+    padding: 8px 12px; /* Smaller padding for mobile */
+    font-size: 14px; /* Smaller font for mobile */
+  }
+}

@@ -1,0 +1,50 @@
+{% load static %}
+
+<style>
+    /* Center the success message box */
+    .success-message {
+        background-color: rgba(173, 227, 223, 1);
+        width: 600px;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 100px auto; /* Center horizontally and vertically */
+       }
+
+    /* Style the title */
+    .success-message h1 {
+        font-size: 2vw;
+        color: #2E8B57;
+        margin-bottom: 10px;
+    }
+
+    /* Style the paragraph */
+    .success-message p {
+        font-size: 1.2vw;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Style the link */
+    .success-message a {
+        font-size: 1.2vw;
+        color: #507fb1;/* Different color for the link */
+        text-decoration: underline; /* Underline the link */
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for the link */
+    .success-message a:hover {
+        color: #0056b3; /* Darker shade on hover */
+    }
+</style>
+
+{% block content %}
+<div class="success-message">
+    <h1>Success!</h1>
+    <p>Your message has been successfully sent. Thank you for reaching out!</p>
+    <a href="{% url 'home' %}">Return to Home</a>
+</div>
+{% endblock content %}

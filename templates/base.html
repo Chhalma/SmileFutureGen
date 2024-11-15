@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile For the Future</title>
+    
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"> 
+    {% include 'snippets/head_snippet.html' %}
+
+  </head>
+<style>
+/* Set the container to take up full viewport height */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Full viewport height */
+}
+
+/* Allow the main content to grow and take up available space */
+main {
+    flex: 1;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;  /* Adjust as needed */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+</style>
+<body>
+  <div class="container">
+    <main>
+      {% block content %}
+    
+      {% endblock content %}
+    
+     </main>
+      </body>
+    <footer>
+      {% include 'snippets/footer_snippet.html' %}
+    </footer>
+    
+  </div>
+ <script>
+  
+</script>
+<script src="{% static 'scripts/scripts.js' %}"></script>
+
+</html>
