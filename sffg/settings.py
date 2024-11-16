@@ -20,19 +20,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-from decouple import Config, Csv
 import os
+from dotenv import load_dotenv
 
-# Load the environment variables from the .env file
-config = Config()
+# Load environment variables from .env file
+load_dotenv()
 
-# Set the Django settings from the environment variables
-DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
-SECRET_KEY = config('DJANGO_SECRET_KEY')
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
+# Secret key
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 
+# Debug flag
+DEBUG = os.getenv('DJANGO_DEBUG') == 'True'
 
-# Application definition
+# Allowed hosts
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '').split(',')# Application definition
 
 INSTALLED_APPS = [
     #myapps
